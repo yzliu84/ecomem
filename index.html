@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control. A research project from Stanford University.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>ECoMEM — Explicit Concept Memory</title>
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#faf9f6;color:#232b32;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}main{max-width:900px;margin:auto;padding:76px 24px 40px}header{text-align:center}.eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;color:#707b80}h1{font-family:Georgia,serif;font-size:clamp(46px,8vw,72px);line-height:1.1;margin:24px 0 18px;font-weight:normal;color:#285c58}h2{font-family:Georgia,serif;font-weight:normal;font-size:29px;line-height:1.35}header h2{font-size:clamp(23px,4vw,34px);max-width:760px;margin:0 auto 26px}.authors{max-width:680px;margin:auto}.affiliation{color:#778087;font-size:14px;margin-top:8px}section{margin-top:55px;border-top:1px solid #dcded9;padding-top:24px}section p{max-width:760px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}.stat strong{font-size:34px;font-family:Georgia,serif;font-weight:normal;display:block;color:#285c58}.stat span{font-size:13px;color:#677277}footer{margin-top:64px;font-size:12px;color:#778087}a{color:#285c58;text-underline-offset:4px} @media(max-width:520px){main{padding-top:45px}.stats{gap:14px}.stat strong{font-size:27px}.stat span{font-size:12px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Stanford University · Robot Learning</p>
+    <h1>ECoMEM</h1>
+    <h2>Explicit Concept Memory for<br>Memory-Dependent Robot Control</h2>
+    <p class="authors">Yize Liu &nbsp;·&nbsp; Ke Wang &nbsp;·&nbsp; Mac Schwager &nbsp;·&nbsp; Jiajun Wu &nbsp;·&nbsp; Yiqing Xu</p>
+    <p class="affiliation">Stanford University</p>
+  </header>
+  <section>
+    <h2>What should a robot remember?</h2>
+    <p>ECoMEM separates maintaining an evidence-grounded account of the past from learning how to act on it. A reusable library represents task-relevant history as explicit concepts. An evidence-based <strong>Writer</strong> selects and updates these records, while a learned <strong>Reader</strong> turns them into memory tokens that condition a vision–language–action policy.</p>
+    <div class="stats">
+      <div class="stat"><strong>82.42%</strong><span>Mean success on 16 RoboMME tasks</span></div>
+      <div class="stat"><strong>15 / 16</strong><span>Tasks leading evaluated robot policies</span></div>
+      <div class="stat"><strong>86.1%</strong><span>Real-robot success · 8.6% without memory</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>A reusable concept library</h2>
+    <p>Four families describe what and where entities are, their states and relations, events and progress, and temporal order. On a real robot, <strong>CupSwitch</strong> reuses the library to count cup round trips; <strong>ScoopPour</strong> extends it with a scoop concept to recognize successful scoop-and-pour cycles.</p>
+  </section>
+  <footer>ECoMEM · 2026 · <a href="mailto:yizeliu@stanford.edu">Contact</a></footer>
+</main>
+</body>
+</html>
